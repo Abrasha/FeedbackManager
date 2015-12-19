@@ -1,12 +1,12 @@
-## FeedbackManager
+# FeedbackManager
 
 Simple CRUD Java application with Hibernate and JavaFX.
 
-# Hibernate
+## Hibernate
 
 There are some examples of mappings, annotations, DAOs and configarations.
 
-# JavaFX
+## JavaFX
 
 As GUI Framework I chose JavaFX 8.0.
 Scene Builder was used to simplify the layout creation.
