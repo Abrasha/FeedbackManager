@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+      prefHeight="500.0" prefWidth="300.0" spacing="10.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="com.aabramov.view.FeedbackOverviewController">
+    <children>
+        <Label fx:id="lblTitle" text="“Good classic food and good location in Port Hardy.”" wrapText="true">
+            <font>
+                <Font name="Times New Roman" size="25.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblBody" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+               text="We stopped for lunch...teen burgers and onion rings. Of course root beer..staff was friendly, cost reasonable and tasty food. Bonus free refills of root beer!"
+               textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS"/>
+        <Label fx:id="lblAuthor" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Marily.n W"/>
+        <Label fx:id="lblDate" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Reviewed 4 weeks ago"/>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</VBox>
