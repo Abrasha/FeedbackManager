@@ -34,7 +34,7 @@ public class CityDAO extends AbstractDAO<City> {
     public List<City> getAll() {
         startTransaction();
         Main.logger.log(Level.INFO, "Getting full list of cities");
-        Query query = session.createQuery("from City ");
+        Query<City> query = session.createQuery("from City ", City.class);
         List<City> result = query.list();
         endTransaction();
         return result;

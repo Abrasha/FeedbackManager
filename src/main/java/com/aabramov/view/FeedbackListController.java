@@ -43,7 +43,7 @@ public class FeedbackListController implements Initializable {
                 FeedbackOverviewController controller = null;
                 Stage overviewStage = new Stage();
                 
-                FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("feedback_overview.fxml"));
+                FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("/view/feedback_overview.fxml"));
                 try {
                     pane = loader.load();
                     controller = loader.getController();
@@ -76,7 +76,7 @@ public class FeedbackListController implements Initializable {
         Parent pane = null;
         AddFeedbackController controller = null;
         
-        FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("add_feed_dialog.fxml"));
+        FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("/view/add_feed_dialog.fxml"));
         try {
             pane = loader.load();
             controller = loader.getController();

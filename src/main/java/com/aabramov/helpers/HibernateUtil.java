@@ -18,7 +18,7 @@ public class HibernateUtil {
         
         if (SESSION_FACTORY == null) {
             Configuration configuration = new Configuration();
-            configuration.configure(HibernateUtil.class.getResource("/com/aabramov/resources/hibernate/hibernate.cfg.xml"));
+            configuration.configure(HibernateUtil.class.getResource("/hibernate.cfg.xml"));
             SESSION_FACTORY = configuration.buildSessionFactory();
         }
     }

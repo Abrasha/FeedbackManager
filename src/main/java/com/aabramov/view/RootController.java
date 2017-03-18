@@ -90,7 +90,7 @@ public class RootController implements Initializable {
     
     private void loadFeedbackList(Restaurant selected) {
         
-        FXMLLoader loader = new FXMLLoader(RootController.class.getResource("feedback_list.fxml"));
+        FXMLLoader loader = new FXMLLoader(RootController.class.getResource("/view/feedback_list.fxml"));
         try {
             Node p = loader.load();
             FeedbackListController controller = loader.getController();
@@ -107,7 +107,7 @@ public class RootController implements Initializable {
         this.cities = cities;
         ObservableList<City> cityItems = FXCollections.observableList(cities);
         cbCities.setItems(cityItems);
-        cbCities.setValue(cityItems.get(0));
+//        cbCities.setValue(cityItems.get(0));
     }
     
     
@@ -144,7 +144,7 @@ public class RootController implements Initializable {
         Parent pane = null;
         AddCityController controller = null;
         
-        FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("add_city_dialog.fxml"));
+        FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("/view/add_city_dialog.fxml"));
         try {
             pane = loader.load();
             controller = loader.getController();
@@ -168,7 +168,7 @@ public class RootController implements Initializable {
         Parent pane = null;
         AddRestaurantController controller = null;
         
-        FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("add_restaurant_dialog.fxml"));
+        FXMLLoader loader = new FXMLLoader(FeedbackListController.class.getResource("/view/add_restaurant_dialog.fxml"));
         try {
             pane = loader.load();
             controller = loader.getController();

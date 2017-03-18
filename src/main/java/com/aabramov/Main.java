@@ -50,7 +50,7 @@ public class Main extends Application {
     
     private Parent loadRoot() throws IOException {
         
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("view/root.fxml"));
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("/view/root.fxml"));
         Parent result = loader.load();
         RootController controller = loader.getController();
         controller.setCities(CityDAO.getInstance().getAll());
